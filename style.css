@@ -76,7 +76,9 @@ main .main__welcome h1 {
     color: #999999;
     font-size: 44px;
 }
-
+main .main__welcome h1:after{
+    display: none;
+}
 .mycompany {
     color: #fcac45;
 }
@@ -98,6 +100,9 @@ main .main__about {
     display: inline-block;
     border-bottom: 3px solid #fcac45;
     padding-bottom: 20px;
+}
+.about__right h1:after{
+    display: none;
 }
 .about__right p {
     margin: 30px 0 50px 0;
@@ -122,14 +127,14 @@ main .main__about {
     font-size: 44px;
     padding-bottom:  30px;
 }
-.line{
+/*.line{
     width: 100px;
     height: 3px;
     background: #fcac45;
-    position: relative; /*Чтобы линия центрировалась*/
+    position: relative;*/ /*Чтобы линия центрировалась*/
     left: 45.5%;
     margin-bottom: 85px;
-}
+}*/
 .photo{
     background: #d7d7d7;
     width: 125px;
@@ -235,7 +240,9 @@ main .main__about {
     color: #000;
     margin-bottom: 30px;
 }
-
+form p{
+    text-align: left;
+}
 .forn__inputs{
     margin-top: 100px;
     display: flex; /*Расположим горизонтально инпуты*/
@@ -270,9 +277,31 @@ input[type=submit] {
     margin-top: 20px;
 }
 
+h1:after{
+    content: "";
+    display: block;
+    margin: 0 auto;
+    width: 100px;
+    padding-top: 30px;
+    border-bottom: 3px solid #fcac45;
+}
 
-
-
+footer{
+    width: 100%;
+    height: auto;
+    background: #222222;
+    padding: 30px 0 30px 0;
+}
+.social{
+    display: flex;
+    justify-content: center;
+}
+.social img{
+    margin-left: 12px;
+}
+.social img:hover{
+    opacity: 0.6;
+}
 
 
 
